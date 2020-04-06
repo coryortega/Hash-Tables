@@ -9,7 +9,7 @@ class LinkedPair:
 
 class HashTable:
     '''
-    A hash table that with `capacity` buckets
+    A hash table that with capacity buckets
     that accepts string keys
     '''
     def __init__(self, capacity):
