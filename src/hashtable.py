@@ -56,7 +56,7 @@ class HashTable:
         '''
         # (key: value) pair
         pair = LinkedPair(key, value)
-        # takes key and sets index using hash
+        # hashing the key to find the bucket
         index = self._hash_mod(key)
 
         # If a key exists:
@@ -100,9 +100,8 @@ class HashTable:
                 while current_pair:
                     # If the key within that pair is the same as the input key
                     if current_pair.key == key:
-                        # That item in storage
-                        item = current_pair.next
-                        # Equals None
+                        # That item in storage equals none
+                        # item = current_pair.next
                         current_pair.next = None
                     # Cycle through
                     current_pair = current_pair.next
